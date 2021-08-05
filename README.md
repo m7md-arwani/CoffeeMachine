@@ -25,5 +25,6 @@ Exit:
 This option will turn off the machine.
 
 ## Credits
-This program is based on the Coffee Machine project on Jet Brains Academy.
+
+This program is based on the Coffee Machine project on [Jet Brains Academy.](https://hyperskill.org/tracks)
 
