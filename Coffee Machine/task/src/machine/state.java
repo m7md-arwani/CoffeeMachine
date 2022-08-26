@@ -37,7 +37,7 @@ public class state {
                         currentState = State.TAKING_MONEY;
                         break;
                     case "remaining":
-                        newCoffeeMachine.status();
+                        calculation.status();
                         break;
                     case "exit":
                         isRunning = false;
@@ -46,15 +46,15 @@ public class state {
                 break;
             // From here, the cases will act according to the state that have been changed in the previous switch.
             case CHOOSING_A_COFFEE:
-                newCoffeeMachine.buy();
+                calculation.buy();
                 currentState = State.CHOOSING_AN_ACTION;
                 break;
             case FILLING_MACHINE:
-                newCoffeeMachine.fill();
+                calculation.fill();
                 currentState = State.CHOOSING_AN_ACTION;
                 break;
             case TAKING_MONEY:
-                newCoffeeMachine.take();
+                calculation.take();
                 currentState = State.CHOOSING_AN_ACTION;
                 break;
         }
